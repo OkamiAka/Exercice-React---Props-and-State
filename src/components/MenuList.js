@@ -7,6 +7,7 @@ function MenuList({ foodItems }) {
     <div>
       {foodItems.map((item) => (
         <MenuItem
+          key={item.itemName}
           description={item.description}
           foodImage={item.foodImage}
           isFavorite={item.isFavorite}
